@@ -1,0 +1,15 @@
+tcpdump: listening on enp1s0np1, link-type EN10MB (Ethernet), capture size 262144 bytes
+21:53:58.801758281 00:15:4d:13:61:4a > 01:00:5e:00:00:fb, ethertype IPv4 (0x0800), length 87: (tos 0x0, ttl 255, id 59365, offset 0, flags [DF], proto UDP (17), length 73)
+    10.1.0.1.5353 > 224.0.0.251.5353: [bad udp cksum 0xeb43 -> 0xe939!] 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+21:54:05.728642428 00:00:00:00:00:00 > 00:15:4d:13:61:49, ethertype 802.1Q (0x8100), length 46: vlan 1, p 0, ethertype IPv4, (tos 0x0, ttl 64, id 1, offset 0, flags [none], proto ICMP (1), length 28)
+    10.0.0.1 > 10.0.0.1: ICMP echo request, id 0, seq 0, length 8
+21:54:08.112484940 00:00:00:00:00:00 > 00:15:4d:13:61:49, ethertype 802.1Q (0x8100), length 46: vlan 1, p 0, ethertype IPv4, (tos 0x0, ttl 64, id 1, offset 0, flags [none], proto ICMP (1), length 28)
+    10.0.0.1 > 10.0.0.1: ICMP echo request, id 0, seq 0, length 8
+21:54:18.341881652 00:00:00:00:00:00 > 00:15:4d:13:61:4a, ethertype 802.1Q (0x8100), length 60: vlan 1, p 0, ethertype IPv4, (tos 0x0, ttl 64, id 1, offset 0, flags [none], proto ICMP (1), length 28)
+    10.0.0.1 > 10.0.0.1: ICMP echo request, id 0, seq 0, length 8
+21:54:20.752679068 00:00:00:00:00:00 > 00:15:4d:13:61:4a, ethertype 802.1Q (0x8100), length 60: vlan 1, p 0, ethertype IPv4, (tos 0x0, ttl 64, id 1, offset 0, flags [none], proto ICMP (1), length 28)
+    10.0.0.1 > 10.0.0.1: ICMP echo request, id 0, seq 0, length 8
+^C
+5 packets captured
+5 packets received by filter
+0 packets dropped by kernel

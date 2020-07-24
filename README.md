@@ -1,0 +1,3 @@
+# pvs-experiments scripts and datasets
+
+In this repo one may find a how-to, a set of scripts, and generated datasets and plots for each experiment we carried out during the evaluation of PvS for our submission. Our intention is that anyone can use PvS to run the virtual switches and control plane apps we used in our simulation/experiments and use the set of evaluation scripts we generated for replicating the results we discussed in our submission. The testbed we used in our experiments is described in the manuscript. As per double-blind submission requirements, we will not upload the manuscript.

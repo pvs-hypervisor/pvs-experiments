@@ -1,0 +1,245 @@
+PvS - Experiment began Thu Feb 6-02-2020 - 11:12:01
+
+Injected Packets: 1
+Packets per second = 2090811
+Packets per second = 2090763
+Packets per second = 2090763
+Packets per second = 2090776
+Packets per second = 2090776
+Packets per second = 2090780
+Packets per second = 2090729
+Packets per second = 2090729
+Packets per second = 2090727
+Packets per second = 2090727
+
+Injected Packets: 2
+Packets per second = 4178681
+Packets per second = 4178681
+Packets per second = 4178616
+Packets per second = 4178616
+Packets per second = 4178567
+Packets per second = 4178567
+Packets per second = 4178674
+Packets per second = 4178674
+Packets per second = 4178596
+Packets per second = 4178596
+
+Injected Packets: 3
+Packets per second = 6258874
+Packets per second = 6258848
+Packets per second = 6258848
+Packets per second = 6258856
+Packets per second = 6258856
+Packets per second = 6258839
+Packets per second = 6258839
+Packets per second = 6258876
+Packets per second = 6258876
+Packets per second = 6258830
+
+Injected Packets: 4
+Packets per second = 8266322
+Packets per second = 8266322
+Packets per second = 8266322
+Packets per second = 8266320
+Packets per second = 8266320
+Packets per second = 8266324
+Packets per second = 8266324
+Packets per second = 8266310
+Packets per second = 8266310
+Packets per second = 8266289
+
+Injected Packets: 5
+Packets per second = 10208096
+Packets per second = 10208072
+Packets per second = 10208072
+Packets per second = 10208089
+Packets per second = 10208089
+Packets per second = 10208128
+Packets per second = 10208128
+Packets per second = 10208113
+Packets per second = 10208113
+Packets per second = 10208159
+
+Injected Packets: 6
+Packets per second = 12149622
+Packets per second = 12149622
+Packets per second = 12149570
+Packets per second = 12149570
+Packets per second = 12149528
+Packets per second = 12149528
+Packets per second = 12149538
+Packets per second = 12149538
+Packets per second = 12149526
+Packets per second = 12149526
+
+Injected Packets: 7
+Packets per second = 14079367
+Packets per second = 14079367
+Packets per second = 14079463
+Packets per second = 14079463
+Packets per second = 14079486
+Packets per second = 14079486
+Packets per second = 14079428
+Packets per second = 14079428
+Packets per second = 14079695
+Packets per second = 14079695
+
+Injected Packets: 8
+Packets per second = 16056423
+Packets per second = 16056148
+Packets per second = 16056148
+Packets per second = 16056365
+Packets per second = 16055857
+Packets per second = 16055857
+Packets per second = 16055929
+Packets per second = 16055929
+Packets per second = 16056012
+Packets per second = 16056012
+
+Injected Packets: 9
+Packets per second = 16666667
+Packets per second = 16666667
+Packets per second = 16666666
+Packets per second = 16666666
+Packets per second = 16666667
+Packets per second = 16666667
+Packets per second = 16666667
+Packets per second = 16666667
+Packets per second = 16666667
+Packets per second = 16666667
+
+Injected Packets: 10
+Packets per second = 16666667
+Packets per second = 16666667
+Packets per second = 16666667
+Packets per second = 16666667
+Packets per second = 16666666
+Packets per second = 16666666
+Packets per second = 16666667
+Packets per second = 16666667
+Packets per second = 16666667
+Packets per second = 16666667
+
+
+P4-NetFPGA - Experiment began Thu Feb 6-02-2020 - 12:01:46
+
+Injected Packets: 1
+Packets per second = 2155041
+Packets per second = 2155047
+Packets per second = 2155047
+Packets per second = 2155061
+Packets per second = 2155061
+Packets per second = 2155056
+Packets per second = 2155056
+Packets per second = 2155052
+Packets per second = 2155052
+Packets per second = 2155058
+
+Injected Packets: 2
+Packets per second = 4308521
+Packets per second = 4308356
+Packets per second = 4308356
+Packets per second = 4308406
+Packets per second = 4308406
+Packets per second = 4308380
+Packets per second = 4308380
+Packets per second = 4308233
+Packets per second = 4308233
+Packets per second = 4308441
+
+Injected Packets: 3
+Packets per second = 6449763
+Packets per second = 6449763
+Packets per second = 6449773
+Packets per second = 6449773
+Packets per second = 6449711
+Packets per second = 6449711
+Packets per second = 6449806
+Packets per second = 6449806
+Packets per second = 6449767
+Packets per second = 6449767
+
+Injected Packets: 4
+Packets per second = 8544298
+Packets per second = 8544298
+Packets per second = 8544328
+Packets per second = 8544328
+Packets per second = 8544292
+Packets per second = 8544292
+Packets per second = 8544294
+Packets per second = 8544294
+Packets per second = 8544311
+Packets per second = 8544311
+
+Injected Packets: 5
+Packets per second = 10546517
+Packets per second = 10546517
+Packets per second = 10546531
+Packets per second = 10546531
+Packets per second = 10546527
+Packets per second = 10546527
+Packets per second = 10546539
+Packets per second = 10546539
+Packets per second = 10546518
+Packets per second = 10546518
+
+Injected Packets: 6
+Packets per second = 12552064
+Packets per second = 12552077
+Packets per second = 12552077
+Packets per second = 12552033
+Packets per second = 12552033
+Packets per second = 12552047
+Packets per second = 12552047
+Packets per second = 12552023
+Packets per second = 12552023
+Packets per second = 12552062
+
+Injected Packets: 7
+Packets per second = 14508877
+Packets per second = 14508891
+Packets per second = 14508891
+Packets per second = 14508937
+Packets per second = 14508937
+Packets per second = 14508831
+Packets per second = 14508831
+Packets per second = 14508884
+Packets per second = 14508884
+Packets per second = 14508865
+Packets per second = 14508865
+
+Injected Packets: 8
+Packets per second = 16565525
+Packets per second = 16565480
+Packets per second = 16565480
+Packets per second = 16565514
+Packets per second = 16565514
+Packets per second = 16565448
+Packets per second = 16565448
+Packets per second = 16565497
+Packets per second = 16565497
+Packets per second = 16565483
+
+Injected Packets: 9
+Packets per second = 17857089
+Packets per second = 17857089
+Packets per second = 17857087
+Packets per second = 17857087
+Packets per second = 17857087
+Packets per second = 17857087
+Packets per second = 17857087
+Packets per second = 17857087
+Packets per second = 17857086
+Packets per second = 17857086
+
+Injected Packets: 10
+Packets per second = 17857090
+Packets per second = 17857088
+Packets per second = 17857088
+Packets per second = 17857088
+Packets per second = 17857088
+Packets per second = 17857089
+Packets per second = 17857089
+Packets per second = 17857090
+Packets per second = 17857090
+Packets per second = 17857092

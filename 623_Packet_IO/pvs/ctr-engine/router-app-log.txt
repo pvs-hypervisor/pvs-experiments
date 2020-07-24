@@ -1,0 +1,23 @@
+WARNING: No route found for IPv6 destination :: (no default route?)
+Packet-in arived on client_router 1593301602.518464088
+Packet-out sent to the server from client_router 1593301602.524647951
+Packet-in arived on client_router 1593301632.646188021
+Packet-out sent to the server from client_router 1593301632.652021885
+^CTraceback (most recent call last):
+  File "examples/sdn_apps/client_router.py", line 217, in <module>
+    main()
+  File "examples/sdn_apps/client_router.py", line 149, in main
+    packet = next(streamC)
+  File "/usr/local/lib/python2.7/dist-packages/grpc/_channel.py", line 413, in next
+    return self._next()
+  File "/usr/local/lib/python2.7/dist-packages/grpc/_channel.py", line 697, in _next
+    _common.wait(self._state.condition.wait, _response_ready)
+  File "/usr/local/lib/python2.7/dist-packages/grpc/_common.py", line 139, in wait
+    _wait_once(wait_fn, MAXIMUM_WAIT_TIMEOUT, spin_cb)
+  File "/usr/local/lib/python2.7/dist-packages/grpc/_common.py", line 104, in _wait_once
+    wait_fn(timeout=timeout)
+  File "/usr/lib/python2.7/threading.py", line 359, in wait
+    _sleep(delay)
+KeyboardInterrupt
+root@sume-server:~/p4runtime-grpc-v3# 
+

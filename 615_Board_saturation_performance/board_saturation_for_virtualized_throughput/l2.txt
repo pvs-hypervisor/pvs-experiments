@@ -1,0 +1,101 @@
+Injection 1:
+Count = 2097609
+Count = 2097607
+Count = 2097608
+Count = 2097619
+Count = 2097623
+Count = 2097614
+Count = 2097616
+Count = 2097624
+Count = 2097612
+Count = 2097612
+Count = 2097616
+Count = 2097614
+Count = 2097631
+Count = 2097604
+Count = 2097639
+Count = 2097656
+Count = 2097616
+Count = 2097588
+Count = 2097588
+Count = 2097605
+
+Injection 2:
+Count = 4194226
+Count = 4194247
+Count = 4194220
+Count = 4194248
+Count = 4194198
+Count = 4194218
+Count = 4194240
+Count = 4194225
+Count = 4194265
+Count = 4194213
+Count = 4194227
+Count = 4194238
+Count = 4194269
+Count = 4194223
+Count = 4194197
+Count = 4194187
+Count = 4194227
+Count = 4194231
+Count = 4194219
+Count = 4194219
+Count = 4194191
+
+Injection 3:
+Count = 5242233
+Count = 5426386
+Count = 5762252
+Count = 5762217
+Count = 6155537
+Count = 6280184
+Count = 6280266
+Count = 6280260
+Count = 6280238
+Count = 6280212
+Count = 6280233
+Count = 6280274
+Count = 6280291
+Count = 6280301
+Count = 6280313
+Count = 6280262
+Count = 6280173
+Count = 6280233
+Count = 6280247
+Count = 6280240
+
+Injection 4:
+Count = 8287338
+Count = 8287344
+Count = 8287340
+Count = 8287330
+Count = 8287316
+Count = 8287313
+Count = 8287358
+Count = 8287340
+Count = 8287353
+Count = 8287338
+Count = 8287341
+Count = 8287334
+Count = 8287325
+Count = 8287326
+Count = 8287355
+Count = 8287306
+Count = 8287333
+Count = 8287339
+Count = 8287352
+Count = 8287340
+Count = 8287322
+
+
+Injection 5:
+
+
+
+Injection 6:
+Injection 7:
+Injection 8:
+Injection 9:
+Injection 10:
+Injection 11:

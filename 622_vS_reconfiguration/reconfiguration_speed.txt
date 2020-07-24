@@ -1,0 +1,4 @@
+Experiment began Thu Feb 6-02-2020 - 16:31:07
+
+Reconfiguration time full = 8 sec
+Reconfiguration time partial = 4 sec

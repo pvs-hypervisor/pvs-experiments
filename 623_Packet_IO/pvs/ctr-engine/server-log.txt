@@ -1,0 +1,201 @@
++ rm -rf database.db
++ source scripts/export_vars.sh
+++ export LD_LIBRARY_PATH=./platform_api/lib/hwtestlib/
+++ LD_LIBRARY_PATH=./platform_api/lib/hwtestlib/
+++ export PYTHONPATH=.
+++ PYTHONPATH=.
++ python server/grpc_server.py
+Running load_libsume_module (platform_api/lib/hwtestlib/libsume.so)...
+Loading l2 switch (id: 1), modules @ platform_api/lib/l2/, switch_data @ platform_api/lib/l2/switch_info.dat
+Running load_switch_data for switch l2
+Adding table for switch l2: dmac(0), type: EM
+Processing from dat_file field {u'p4_name': u'hdr.ethernet.dstAddr', u'type': u'bits', u'px_name': u'lookup_request_key', u'size': 48}
+Adding match field for dmac(0), name: lookup_request_key, type: bits, size: 48
+Adding action for dmac(0), name: .NoAction, id 2
+Adding action for dmac(0), name: TopPipe.forward, id 1
+Processing from dat_file field {u'type': u'bits', u'px_name': u'action_run', u'size': 2}
+Processing from dat_file field {u'p4_action': u'TopPipe.forward', u'fields': [{u'type': u'bits', u'px_name': u'port', u'size': 8}], u'type': u'struct', u'px_name': u'forward_0'}
+Adding action field for TopPipe.forward(1), name: port, type: bits, size: 8
+Running load_switch_modules for switch l2
+Loading libcam for switch l2 (platform_api/lib/l2//libcam.so)
+Running load_reg_data for switch l2
+Loading router switch (id: 2), modules @ platform_api/lib/router/, switch_data @ platform_api/lib/router/switch_info.dat
+Running load_switch_data for switch router
+Adding table for switch router: send_frame(2), type: EM
+Processing from dat_file field {u'p4_name': u'sume_metadata.dst_port', u'type': u'bits', u'px_name': u'lookup_request_key', u'size': 8}
+Adding match field for send_frame(2), name: lookup_request_key, type: bits, size: 8
+Adding action for send_frame(2), name: .NoAction, id 3
+Adding action for send_frame(2), name: TopPipe.set_smac, id 1
+Adding action for send_frame(2), name: TopPipe.drop, id 2
+Processing from dat_file field {u'type': u'bits', u'px_name': u'action_run', u'size': 2}
+Processing from dat_file field {u'p4_action': u'TopPipe.set_smac', u'fields': [{u'type': u'bits', u'px_name': u'smac', u'size': 48}], u'type': u'struct', u'px_name': u'set_smac_0'}
+Adding action field for TopPipe.set_smac(1), name: smac, type: bits, size: 48
+Adding table for switch router: ipv4_nhop(0), type: EM
+Processing from dat_file field {u'p4_name': u'hdr.ipv4.dstAddr', u'type': u'bits', u'px_name': u'lookup_request_key_1', u'size': 32}
+Adding match field for ipv4_nhop(0), name: lookup_request_key_1, type: bits, size: 32
+Adding action for ipv4_nhop(0), name: .NoAction, id 3
+Adding action for ipv4_nhop(0), name: TopPipe.set_nhop, id 1
+Adding action for ipv4_nhop(0), name: TopPipe.drop, id 2
+Processing from dat_file field {u'type': u'bits', u'px_name': u'action_run', u'size': 2}
+Processing from dat_file field {u'p4_action': u'TopPipe.set_nhop', u'fields': [{u'type': u'bits', u'px_name': u'nhop_ipv4', u'size': 32}], u'type': u'struct', u'px_name': u'set_nhop_0'}
+Adding action field for TopPipe.set_nhop(1), name: nhop_ipv4, type: bits, size: 32
+Adding table for switch router: forward_table(1), type: EM
+Processing from dat_file field {u'p4_name': u'user_metadata.routing_metadata.nhop_ipv4', u'type': u'bits', u'px_name': u'lookup_request_key_0', u'size': 32}
+Adding match field for forward_table(1), name: lookup_request_key_0, type: bits, size: 32
+Adding action for forward_table(1), name: .NoAction, id 3
+Adding action for forward_table(1), name: TopPipe.drop, id 2
+Adding action for forward_table(1), name: TopPipe.set_dmac, id 1
+Processing from dat_file field {u'type': u'bits', u'px_name': u'action_run', u'size': 2}
+Processing from dat_file field {u'p4_action': u'TopPipe.set_dmac', u'fields': [{u'type': u'bits', u'px_name': u'dmac', u'size': 48}, {u'type': u'bits', u'px_name': u'port', u'size': 8}], u'type': u'struct', u'px_name': u'set_dmac_0'}
+Adding action field for TopPipe.set_dmac(1), name: dmac, type: bits, size: 48
+Adding action field for TopPipe.set_dmac(1), name: port, type: bits, size: 8
+Running load_switch_modules for switch router
+Loading libcam for switch router (platform_api/lib/router//libcam.so)
+Running load_reg_data for switch router
+Loading int switch (id: 3), modules @ platform_api/lib/int/, switch_data @ platform_api/lib/int/switch_info.dat
+Running load_switch_data for switch int
+Adding table for switch int: forward(0), type: EM
+Processing from dat_file field {u'p4_name': u'p.ethernet.dstAddr', u'type': u'bits', u'px_name': u'lookup_request_key', u'size': 48}
+Adding match field for forward(0), name: lookup_request_key, type: bits, size: 48
+Adding action for forward(0), name: .NoAction, id 2
+Adding action for forward(0), name: TopPipe.set_output_port, id 1
+Processing from dat_file field {u'type': u'bits', u'px_name': u'action_run', u'size': 2}
+Processing from dat_file field {u'p4_action': u'TopPipe.set_output_port', u'fields': [{u'type': u'bits', u'px_name': u'port', u'size': 8}], u'type': u'struct', u'px_name': u'set_output_port_0'}
+Adding action field for TopPipe.set_output_port(1), name: port, type: bits, size: 8
+Running load_switch_modules for switch int
+Loading libcam for switch int (platform_api/lib/int//libcam.so)
+Running load_reg_data for switch int
+Successfully loaded permission database into memory
+PvS P4Runtime server running @ grpcs://localhost:50051
+Sniffer Thread Started
+CAM_Init_ValidateContext() - done
+WROTE 0x44020250 = 0x0040
+WROTE 0x44020280 = 0x44444405
+WROTE 0x44020284 = 0x10544
+READ  0x44020244 = 0x0001
+WROTE 0x44020240 = 0x0001
+READ  0x44020244 = 0x0001
+READ  0x44020244 = 0x0001
+CAM_Init_ValidateContext() - done
+WROTE 0x44020250 = 0x0001
+WROTE 0x44020280 = 0x11111105
+WROTE 0x44020284 = 0x10511
+READ  0x44020244 = 0x0001
+WROTE 0x44020240 = 0x0001
+READ  0x44020244 = 0x0001
+READ  0x44020244 = 0x0001
+CAM_Init_ValidateContext() - done
+WROTE 0x44020250 = 0x0010
+WROTE 0x44020280 = 0x33333305
+WROTE 0x44020284 = 0x10533
+READ  0x44020244 = 0x0001
+WROTE 0x44020240 = 0x0001
+READ  0x44020244 = 0x0001
+READ  0x44020244 = 0x0001
+CAM_Init_ValidateContext() - done
+WROTE 0x44020250 = 0x0004
+WROTE 0x44020280 = 0x22222205
+WROTE 0x44020284 = 0x10522
+READ  0x44020244 = 0x0001
+WROTE 0x44020240 = 0x0001
+READ  0x44020244 = 0x0001
+READ  0x44020244 = 0x0001
+CAM_Init_ValidateContext() - done
+WROTE 0x44020150 = 0xa000001
+WROTE 0x44020180 = 0x13614901
+WROTE 0x44020184 = 0x100154d
+READ  0x44020144 = 0x0001
+WROTE 0x44020140 = 0x0001
+READ  0x44020144 = 0x0001
+READ  0x44020144 = 0x0001
+CAM_Init_ValidateContext() - done
+WROTE 0x44020150 = 0xa010001
+WROTE 0x44020180 = 0x13614a10
+WROTE 0x44020184 = 0x100154d
+READ  0x44020144 = 0x0001
+WROTE 0x44020140 = 0x0001
+READ  0x44020144 = 0x0001
+READ  0x44020144 = 0x0001
+CAM_Init_ValidateContext() - done
+WROTE 0x44020150 = 0xa010002
+WROTE 0x44020180 = 0x13610840
+WROTE 0x44020184 = 0x100154d
+READ  0x44020144 = 0x0001
+WROTE 0x44020140 = 0x0001
+READ  0x44020144 = 0x0001
+READ  0x44020144 = 0x0001
+CAM_Init_ValidateContext() - done
+WROTE 0x44020150 = 0xa000002
+WROTE 0x44020180 = 0x13610704
+WROTE 0x44020184 = 0x100154d
+READ  0x44020144 = 0x0001
+WROTE 0x44020140 = 0x0001
+READ  0x44020144 = 0x0001
+READ  0x44020144 = 0x0001
+Packet-in arived on server 1593301602.516531944
+Packet-in sent to the controller 1593301602.516896009
+ Packet-in sent to the controller 1593301602.517060995
+CAM_Init_ValidateContext() - done
+WROTE 0x44020050 = 0xa010002
+WROTE 0x44020080 = 0xa010002
+WROTE 0x44020084 = 0x0001
+READ  0x44020044 = 0x0001
+WROTE 0x44020040 = 0x0001
+READ  0x44020044 = 0x0001
+READ  0x44020044 = 0x0001
+Packet-out received from the controller 1593301602.525275946
+Packet-out sent to interface 1593301602.560174942
+Packet-in arived on server 1593301632.644356012
+Packet-in sent to the controller 1593301632.644834995
+ Packet-in sent to the controller 1593301632.645018101
+CAM_Init_ValidateContext() - done
+WROTE 0x44020050 = 0xa000002
+WROTE 0x44020080 = 0xa000002
+WROTE 0x44020084 = 0x0001
+READ  0x44020044 = 0x0001
+WROTE 0x44020040 = 0x0001
+READ  0x44020044 = 0x0001
+READ  0x44020044 = 0x0001
+Packet-out received from the controller 1593301632.653083086
+Packet-out sent to interface 1593301632.692090034
+Packet-in arived on server 1593301741.376385927
+Packet-in sent to the controller 1593301741.376827955
+Packet-in sent to the controller 1593301741.377134085
+CAM_Init_ValidateContext() - done
+WROTE 0x44020050 = 0x4d136149
+WROTE 0x44020054 = 0x0015
+WROTE 0x44020080 = 0x0101
+READ  0x44020044 = 0x0001
+WROTE 0x44020040 = 0x0001
+READ  0x44020044 = 0x0001
+READ  0x44020044 = 0x0001
+Packet-out received from the controller 1593301741.384991884
+Packet-out sent to interface 1593301741.420186996
+Packet-in arived on server 1593301753.976617098
+Packet-in sent to the controller 1593301753.977293968
+Packet-in sent to the controller 1593301753.978059053
+CAM_Init_ValidateContext() - done
+WROTE 0x44020050 = 0x4d13614a
+WROTE 0x44020054 = 0x0015
+WROTE 0x44020080 = 0x0110
+READ  0x44020044 = 0x0001
+WROTE 0x44020040 = 0x0001
+READ  0x44020044 = 0x0001
+READ  0x44020044 = 0x0001
+Packet-out received from the controller 1593301753.985174894
+Packet-out sent to interface 1593301754.024096012
+^CTraceback (most recent call last):
+  File "server/grpc_server.py", line 123, in <module>
+    server.wait_for_termination()
+  File "/usr/local/lib/python2.7/dist-packages/grpc/_server.py", line 976, in wait_for_termination
+    timeout=timeout)
+  File "/usr/local/lib/python2.7/dist-packages/grpc/_common.py", line 139, in wait
+    _wait_once(wait_fn, MAXIMUM_WAIT_TIMEOUT, spin_cb)
+  File "/usr/local/lib/python2.7/dist-packages/grpc/_common.py", line 104, in _wait_once
+    wait_fn(timeout=timeout)
+  File "/usr/lib/python2.7/threading.py", line 614, in wait
+    self.__cond.wait(timeout)
+  File "/usr/lib/python2.7/threading.py", line 359, in wait
+    _sleep(delay)
+KeyboardInterrupt
+root@sume-server:~/p4runtime-grpc-v3# 

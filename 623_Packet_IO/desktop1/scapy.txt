@@ -1,0 +1,26 @@
+root@admin1-desktop:~# scapy
+INFO: Can't import python gnuplot wrapper . Won't be able to plot.
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+INFO: No IPv6 support in kernel
+WARNING: No route found for IPv6 destination :: (no default route?)
+INFO: Can't import python Crypto lib. Won't be able to decrypt WEP.
+INFO: Can't import python Crypto lib. Disabled certificate manipulation tools
+Welcome to Scapy (2.2.0)
+>>> 
+>>> p = Ether(dst="00:15:4d:13:61:49")/Dot1Q(vlan=1)/IP(dst="10.0.0.1")/ICMP()
+>>> sendp(p, iface="enp1s0np1")
+.
+Sent 1 packets.
+>>> sendp(p, iface="enp1s0np1")
+.
+Sent 1 packets.
+>>> p = Ether(dst="00:15:4d:13:61:4a")/Dot1Q(vlan=1)/IP(dst="10.0.0.1")/ICMP()
+>>> sendp(p, iface="enp1s0np0")
+.
+Sent 1 packets.
+>>> 
+>>> sendp(p, iface="enp1s0np0")
+.
+Sent 1 packets.
+>>> 
+root@admin1-desktop:~# 

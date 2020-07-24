@@ -1,0 +1,28 @@
+tcpdump: listening on enp1s0np0, link-type EN10MB (Ethernet), capture size 262144 bytes
+21:51:46.872596459 00:00:00:00:00:00 > 00:15:4d:13:61:07, ethertype 802.1Q (0x8100), length 46: vlan 2, p 0, ethertype IPv4, (tos 0x0, ttl 64, id 1, offset 0, flags [none], proto ICMP (1), length 28)
+    10.1.0.2 > 10.1.0.2: ICMP echo request, id 0, seq 0, length 8
+	0x0000:  0015 4d13 6107 0000 0000 0000 8100 0002
+	0x0010:  0800 4500 001c 0001 0000 4001 66db 0a01
+	0x0020:  0002 0a01 0002 0800 f7ff 0000 0000
+21:51:54.600590180 00:00:00:00:00:00 > 00:15:4d:13:61:07, ethertype 802.1Q (0x8100), length 46: vlan 2, p 0, ethertype IPv4, (tos 0x0, ttl 64, id 1, offset 0, flags [none], proto ICMP (1), length 28)
+    10.1.0.2 > 10.1.0.2: ICMP echo request, id 0, seq 0, length 8
+	0x0000:  0015 4d13 6107 0000 0000 0000 8100 0002
+	0x0010:  0800 4500 001c 0001 0000 4001 66db 0a01
+	0x0020:  0002 0a01 0002 0800 f7ff 0000 0000
+21:52:17.012929094 05:22:22:22:22:05 > 00:15:4d:13:61:07, ethertype 802.1Q (0x8100), length 60: vlan 2, p 0, ethertype IPv4, (tos 0x0, ttl 63, id 1, offset 0, flags [none], proto ICMP (1), length 28, bad cksum 66dd (->67dd)!)
+    10.0.0.2 > 10.0.0.2: ICMP echo request, id 0, seq 0, length 8
+	0x0000:  0015 4d13 6107 0522 2222 2205 8100 0002
+	0x0010:  0800 4500 001c 0001 0000 3f01 66dd 0a00
+	0x0020:  0002 0a00 0002 0800 f7ff 0000 0000 0000
+	0x0030:  0000 0000 0000 0000 0000 0000
+21:52:21.192777553 05:22:22:22:22:05 > 00:15:4d:13:61:07, ethertype 802.1Q (0x8100), length 60: vlan 2, p 0, ethertype IPv4, (tos 0x0, ttl 63, id 1, offset 0, flags [none], proto ICMP (1), length 28, bad cksum 66dd (->67dd)!)
+    10.0.0.2 > 10.0.0.2: ICMP echo request, id 0, seq 0, length 8
+	0x0000:  0015 4d13 6107 0522 2222 2205 8100 0002
+	0x0010:  0800 4500 001c 0001 0000 3f01 66dd 0a00
+	0x0020:  0002 0a00 0002 0800 f7ff 0000 0000 0000
+	0x0030:  0000 0000 0000 0000 0000 0000
+^C
+4 packets captured
+4 packets received by filter
+0 packets dropped by kernel
+root@admin1-desktop:~/experiments/partial/router# reset && tcpdump -n -vvv -e -xx  --time-stamp-precision=nano -i enp1s0np0

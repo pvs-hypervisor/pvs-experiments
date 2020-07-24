@@ -1,0 +1,15 @@
+>>> p = Ether(dst="00:15:4d:13:61:07")/Dot1Q(vlan=2)/IP(dst="10.1.0.2")/ICMP()
+>>> sendp(p, iface="enp1s0np0")
+.
+Sent 1 packets.
+>>> sendp(p, iface="enp1s0np0")
+.
+Sent 1 packets.
+>>> p = Ether(dst="00:15:4d:13:61:08")/Dot1Q(vlan=2)/IP(dst="10.0.0.2")/ICMP()
+>>> sendp(p, iface="enp1s0np1")
+.
+Sent 1 packets.
+>>> sendp(p, iface="enp1s0np1")
+.
+Sent 1 packets.
+>>> 

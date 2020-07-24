@@ -1,0 +1,26 @@
+tcpdump: listening on nf3, link-type EN10MB (Ethernet), capture size 262144 bytes
+20:46:42.513479690 61:07:00:00:00:00 > 02:00:00:15:4d:13, 802.3, length 0: LLC, dsap Unknown (0x80) Group, ssap Null (0x00) Command, ctrl 0x0200: Information, send seq 0, rcv seq 1, Flags [Command], length 48
+	0x0000:  0200 0015 4d13 6107 0000 0000 0000 8100
+	0x0010:  0002 0800 4500 001c 0001 0000 4001 66db
+	0x0020:  0a01 0002 0a01 0002 0800 f7ff 0000 0000
+	0x0030:  0000 0000 0000 0000 0000 0000 0000
+20:47:12.641139453 61:08:00:00:00:00 > 02:00:00:15:4d:13, 802.3, length 0: LLC, dsap Unknown (0x80) Group, ssap Null (0x00) Command, ctrl 0x0200: Information, send seq 0, rcv seq 1, Flags [Command], length 48
+	0x0000:  0200 0015 4d13 6108 0000 0000 0000 8100
+	0x0010:  0002 0800 4500 001c 0001 0000 4001 66dd
+	0x0020:  0a00 0002 0a00 0002 0800 f7ff 0000 0000
+	0x0030:  0000 0000 0000 0000 0000 0000 0000
+20:49:01.372590795 61:49:00:00:00:00 > 01:00:00:15:4d:13, 802.3, length 0: LLC, dsap Unknown (0x80) Group, ssap Null (0x00) Command, ctrl 0x0100: Information, send seq 0, rcv seq 0, Flags [Poll], length 48
+	0x0000:  0100 0015 4d13 6149 0000 0000 0000 8100
+	0x0010:  0001 0800 4500 001c 0001 0000 4001 66df
+	0x0020:  0a00 0001 0a00 0001 0800 f7ff 0000 0000
+	0x0030:  0000 0000 0000 0000 0000 0000 0000
+20:49:13.972183972 61:4a:00:00:00:00 > 01:00:00:15:4d:13, 802.3, length 0: LLC, dsap Unknown (0x80) Group, ssap Null (0x00) Command, ctrl 0x0100: Information, send seq 0, rcv seq 0, Flags [Poll], length 48
+	0x0000:  0100 0015 4d13 614a 0000 0000 0000 8100
+	0x0010:  0001 0800 4500 001c 0001 0000 4001 66df
+	0x0020:  0a00 0001 0a00 0001 0800 f7ff 0000 0000
+	0x0030:  0000 0000 0000 0000 0000 0000 0000
+^C
+4 packets captured
+4 packets received by filter
+0 packets dropped by kernel
+root@sume-server:~# 
