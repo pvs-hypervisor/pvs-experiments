@@ -53,5 +53,5 @@ do
 	RXBPS=$((($Rcurrbytes - $Rprevbytes)*1000/$INTERVAL))
 
 	#output to stdout
-        echo "`date +%s` TX $IF: $TXPPS pkts/s $TXBPS bps RX $IF: $RXPPS pkts/s $RXBPS bps"
+        echo "$(($(date +%s%N)/1000000)) TX $IF: $TXPPS pkts/s $TXBPS bps RX $IF: $RXPPS pkts/s $RXBPS bps"
  done
