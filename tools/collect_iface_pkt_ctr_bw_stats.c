@@ -277,8 +277,8 @@ void main(int argc, char **argv)
 
     if (argc != 3) {
         printf ("usage: %s [network-interface] [interval(miliseconds)]\n\n", argv[0]);
-        printf ("   e.g. %s eth0 100\n\n", argv[0]);
-        printf ("   shows packets-per-second. interval MUST BE multiple of 100.\n");
+        printf ("   e.g. %s eth0 50\n\n", argv[0]);
+        printf ("   shows packets-per-second. interval MUST BE multiple of 50.\n");
         exit (1);
     }
     
