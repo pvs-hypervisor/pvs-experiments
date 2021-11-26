@@ -6,7 +6,7 @@ FONTL = ",22"
 set auto x
 set grid xtics ytics lw 1.6
 set xtics 2
-set ytics 2
+set ytics 5
 
 set yrange[0:12]
 
